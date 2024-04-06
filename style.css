@@ -22,21 +22,26 @@ body{
     border-style: solid;
 }
 ul{
+    margin: 0;
     list-style: none;
     padding: 0;
 }
 li.username{
+    width: 100%;
     color: red;
+    background-color: grey;
 }
 
 ul.footer{
     color: green;
+    background-color: grey;
+
 }
 .content{
     display: flex;
     justify-content: center;
 }
 img{
-    width: 80%;
+    width: 100%;
     justify-content: center;
 }
