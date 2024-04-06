@@ -8,14 +8,6 @@ body{
     margin: auto;
     font-family: "Noto Sans", sans-serif;
 }
-.dataFeed{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: auto;
-    gap: 50px;
-}
 .container{
     display: flex;
     flex-direction: column;
@@ -26,6 +18,15 @@ ul{
     list-style: none;
     padding: 0;
 }
+#dataFeed{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+}
+
+
 li.username{
     width: 100%;
     color: red;
@@ -44,4 +45,24 @@ ul.footer{
 img{
     width: 100%;
     justify-content: center;
+}
+
+
+
+footer{
+    position: fixed;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    bottom: 0;
+    background-color: gray;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0%;
+
 }
