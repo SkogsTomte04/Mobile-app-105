@@ -1,0 +1,42 @@
+html{
+    display: flex;
+}
+body{
+    margin-top: 20%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    margin: auto;
+    font-family: "Noto Sans", sans-serif;
+}
+.dataFeed{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    gap: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li.username{
+    color: red;
+}
+
+ul.footer{
+    color: green;
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 80%;
+    justify-content: center;
+}
