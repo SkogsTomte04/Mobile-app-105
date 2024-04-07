@@ -1,7 +1,28 @@
 {
-    "post":[
-    { "username":"John", "content":"Assets/images/1.jpg", "description":"Feeetonnn" },
-    { "username":"Anna", "content":"Assets/images/2.jpg", "description":"brought to you by uhhh" },
-    { "username":"Peter", "content":"Assets/images/3.jpg", "description":"Feerocuis man killed in lego building battle royale" }
+  "post": [
+    {
+      "profilepic": "Assets/profilepics/1.png",
+      "username": "LyftMjolk",
+      "location": "boros",
+      "content": "Assets/images/1.jpg",
+      "title": "Dreamy boy",
+      "description": "look at this charming 5'4 bosnian boy"
+    },
+    {
+      "profilepic": "Assets/profilepics/2.png",
+      "username": "Millekille",
+      "location": "boros",
+      "content": "Assets/images/2.jpg",
+      "title": "Walkin",
+      "description": "brought to you by uhhh the walkers"
+    },
+    {
+      "profilepic": "Assets/profilepics/3.png",
+      "username": "Willenad",
+      "location": "boros",
+      "content": "Assets/images/3.jpg",
+      "title": "Dreamy boy",
+      "description": "Feerocuis man killed in lego building battle royale"
+    }
   ]
 }

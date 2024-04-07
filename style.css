@@ -3,6 +3,8 @@ html{
 }
 body{
     margin-top: 20%;
+    background-color: lightgray;
+    display: flex;
     box-sizing: border-box;
     vertical-align: middle;
     margin: auto;
@@ -11,7 +13,9 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    border-style: solid;
+    border-width: 2px;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
 }
 ul{
     margin: 0;
@@ -20,31 +24,56 @@ ul{
 }
 #dataFeed{
     padding-bottom: 20px;
+    margin: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: auto;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+}
+
+.header{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.header img{
+    display: block;
+    width: 40px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+.header li{
+    padding-left: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
 }
 
 
-li.username{
-    width: 100%;
-    color: red;
-    background-color: grey;
+
+li.location{
+    font-size: medium;
+    font-weight: normal;
 }
 
 ul.footer{
-    color: green;
-    background-color: grey;
-
+    color: black;
+    font-size: small;
+}
+.title{
+    font-size: medium;
+    font-weight: bolder;
 }
 .content{
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
-img{
+.content img{
     width: 100%;
     justify-content: center;
+    border-radius: 10px;
 }
 
 
@@ -55,7 +84,7 @@ footer{
     padding-top: 5px;
     padding-bottom: 5px;
     bottom: 0;
-    background-color: gray;
+
 }
 
 footer ul{
