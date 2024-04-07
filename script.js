@@ -1,8 +1,11 @@
+getJsonData();
+
 function $(x){
     return document.getElementById(x);
 }
 
-fetch('./Assets/data.json')
+function getJsonData(){
+    fetch('./Assets/data.json')
         .then((respond) => {
             if (!respond.ok){
                 throw new Error('HTTP error! Status: ${respond.status}');
@@ -42,6 +45,18 @@ fetch('./Assets/data.json')
                 let like = document.createElement('img');
                 like.classList.add("like");
                 like.src="Assets/icons/heart0.svg";
+                like.addEventListener("click", (event) =>{
+                    if(event.target.classList.contains("like-yes")){
+                        event.target.classList.toggle("like-yes");
+                        event.target.src="Assets/icons/heart0.svg";
+                        console.log("Removing like");
+                    }else{
+                        event.target.classList.toggle("like-yes");
+                        event.target.src="Assets/icons/heart1.svg";
+                        console.log("IT WORKS");
+                    }
+                    
+                });
                 imgcontainer.appendChild(content);
                 imgcontainer.appendChild(like);
                 div.appendChild(imgcontainer);
@@ -65,17 +80,17 @@ fetch('./Assets/data.json')
         }).catch(function (error) { 
             console.error("Unable to fetch data", error);
         })
+}
 
 
-
-document.querySelectorAll(".container").forEach(container =>{
-    const content = container.querySelectorAll(".content");
-    
-    content.forEach(contentrating => {
-        const likebutton = contentrating.querySelector(".like");
-
-        likebutton.addEventListener("click", async() => { //fix thiiisss future william
-            console.log("blablablabl");
-        });
-    });
-});
+const likebutton = () => {
+    const likes = document.querySelectorAll(".like");
+    likes.forEach(like => {
+        like.addEventListener("click", (event) =>{
+            
+            event.target.classList.toggle("like-yes");
+            event.target.src="Assets/icons/heart1.svg";
+            console.log("Adding like");
+        })
+    })
+}
