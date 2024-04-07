@@ -66,6 +66,7 @@ ul.footer{
     font-weight: bolder;
 }
 .content{
+    position: relative;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
@@ -74,6 +75,12 @@ ul.footer{
     width: 100%;
     justify-content: center;
     border-radius: 10px;
+}
+img.like{
+    width: 10%;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 }
 
 

@@ -2,8 +2,7 @@ function $(x){
     return document.getElementById(x);
 }
 
-function getJSONData(){
-    fetch('./Assets/data.json')
+fetch('./Assets/data.json')
         .then((respond) => {
             if (!respond.ok){
                 throw new Error('HTTP error! Status: ${respond.status}');
@@ -33,15 +32,19 @@ function getJSONData(){
                 loc.innerText = obj.post[i].location;
                 ul.appendChild(li);
                 ul.appendChild(loc);
-                header.appendChild(ul)
-                div.appendChild(header)
+                header.appendChild(ul);
+                div.appendChild(header);
 
                 let imgcontainer = document.createElement('div');
                 imgcontainer.classList.add("content")
                 let content = document.createElement('img');
                 content.src=obj.post[i].content;
+                let like = document.createElement('img');
+                like.classList.add("like");
+                like.src="Assets/icons/heart0.svg";
                 imgcontainer.appendChild(content);
-                div.appendChild(imgcontainer)
+                imgcontainer.appendChild(like);
+                div.appendChild(imgcontainer);
 
 
 
@@ -62,5 +65,17 @@ function getJSONData(){
         }).catch(function (error) { 
             console.error("Unable to fetch data", error);
         })
-}
-getJSONData();
+
+
+
+document.querySelectorAll(".container").forEach(container =>{
+    const content = container.querySelectorAll(".content");
+    
+    content.forEach(contentrating => {
+        const likebutton = contentrating.querySelector(".like");
+
+        likebutton.addEventListener("click", async() => { //fix thiiisss future william
+            console.log("blablablabl");
+        });
+    });
+});
