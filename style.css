@@ -2,19 +2,19 @@ html{
     display: flex;
 }
 body{
+    font-family: "Roboto", sans-serif;
     margin-top: 20%;
     background-color: lightgray;
     display: flex;
     box-sizing: border-box;
     vertical-align: middle;
     margin: auto;
-    font-family: "Noto Sans", sans-serif;
     overflow-x: hidden;
 }
 .container{
     display: flex;
     flex-direction: column;
-    border-width: 2px;
+    border-width: 1px;
     border-bottom-style: solid;
     padding-bottom: 10px;
 }
@@ -24,13 +24,12 @@ ul{
     padding: 0;
 }
 #dataFeed{
-    padding-bottom: 20px;
     margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 90%;
-    gap: 20px;
+    gap: 10px;
 }
 
 .header{
