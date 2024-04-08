@@ -9,6 +9,7 @@ body{
     vertical-align: middle;
     margin: auto;
     font-family: "Noto Sans", sans-serif;
+    overflow-x: hidden;
 }
 .container{
     display: flex;
@@ -70,11 +71,29 @@ ul.footer{
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+
 }
-.content img{
+.slider img{
+    display: block;
     width: 100%;
-    justify-content: center;
+    scroll-snap-align: start;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+    background-color: black;
+    scroll-snap-stop: always;
+}
+.slider{
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+}
+.slider::-webkit-scrollbar {
+    display: none;
 }
 img.like{
     width: 10%;

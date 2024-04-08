@@ -40,8 +40,17 @@ function getJsonData(){
 
                 let imgcontainer = document.createElement('div');
                 imgcontainer.classList.add("content")
-                let content = document.createElement('img');
-                content.src=obj.post[i].content;
+                let imgslider = document.createElement('div');
+                imgslider.classList.add("slider")
+
+                obj.post[i].content.forEach(imgAdress => {
+                    let img = document.createElement('img');
+                    img.src=imgAdress;
+                    img.alt="404 image not found";
+                    imgslider.appendChild(img);
+                })
+                imgcontainer.appendChild(imgslider);
+                
                 let like = document.createElement('img');
                 like.classList.add("like");
                 like.src="Assets/icons/heart0.svg";
@@ -57,7 +66,7 @@ function getJsonData(){
                     }
                     
                 });
-                imgcontainer.appendChild(content);
+                
                 imgcontainer.appendChild(like);
                 div.appendChild(imgcontainer);
 

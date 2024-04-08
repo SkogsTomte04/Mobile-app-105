@@ -4,7 +4,10 @@
       "profilepic": "Assets/profilepics/1.png",
       "username": "LyftMjolk",
       "location": "boros",
-      "content": "Assets/images/1.jpg",
+      "content":[
+        "Assets/images/1.jpg",
+        "Assets/images/2.jpg"
+      ],
       "title": "Dreamy boy",
       "description": "look at this charming 5'4 bosnian boy"
     },
@@ -12,7 +15,11 @@
       "profilepic": "Assets/profilepics/2.png",
       "username": "Millekille",
       "location": "boros",
-      "content": "Assets/images/2.jpg",
+      "content": [
+        "Assets/images/3.jpg",
+        "Assets/images/4.png",
+        "Assets/images/7.png"
+      ],
       "title": "Walkin",
       "description": "brought to you by uhhh the walkers"
     },
@@ -20,8 +27,12 @@
       "profilepic": "Assets/profilepics/3.png",
       "username": "Willenad",
       "location": "boros",
-      "content": "Assets/images/3.jpg",
-      "title": "\"I have a dream\"",
+      "content": [
+        "Assets/images/5.png",
+        "Assets/images/6.png",
+        "Assets/images/8.png"
+      ],
+      "title": "\"No Way!!!\"",
       "description": "Feerocuis man killed in lego building battle royale"
     }
   ]
