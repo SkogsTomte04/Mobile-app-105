@@ -75,8 +75,36 @@ function createContentContainer(obj){
     imgcontainer.appendChild(imgslider);
     let like = createLikeButton(obj);
     imgcontainer.appendChild(like);
+    let CommentSection = createCommentSection(obj);
+    imgcontainer.appendChild(CommentSection)
+    let commentButton = createCommentButton(CommentSection);
+    imgcontainer.appendChild(commentButton);
 
     return imgcontainer;
+}
+
+function createCommentButton(div) {
+    let comment = document.createElement('img');
+    comment.classList.add("comment");
+    comment.src="Assets/icons/comment.svg";
+    comment.addEventListener("click", () => {
+        div.classList.toggle("active");
+    })
+    return comment;
+}
+
+function createCommentSection(obj){
+    let div = document.createElement('div');
+    div.classList.add("comment-section");
+    let ul = document.createElement('ul');
+    obj.post[i].comments.forEach(comment => {
+        let li = document.createElement('li');
+        li.textContent = comment;
+        ul.appendChild(li);
+    })
+    div.appendChild(ul);
+    
+    return div;
 }
 
 function createLikeButton(obj){
