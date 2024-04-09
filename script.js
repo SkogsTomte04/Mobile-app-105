@@ -97,10 +97,34 @@ function createCommentSection(obj){
     let div = document.createElement('div');
     div.classList.add("comment-section");
     let ul = document.createElement('ul');
-    obj.post[i].comments.forEach(comment => {
+    ul.classList.add("comment-list");
+    obj.post[i].comments.forEach(commentobject => {
+        let commentContainer = document.createElement('div');
+        commentContainer.classList.add("comment-container");
+
+        let img = document.createElement('img');
+        img.classList.add('userpfp');
+        img.src=commentobject.userpfp;
+        commentContainer.appendChild(img);
+
+        let div = document.createElement('div');
+        div.classList.add("comment-content");
+
         let li = document.createElement('li');
-        li.textContent = comment;
-        ul.appendChild(li);
+        li.classList.add("comment-id");
+        li.textContent = commentobject.userid;
+        div.appendChild(li);
+        
+
+        let content = document.createElement('li');
+        content.classList.add("comment-text");
+        content.textContent = commentobject.comment;
+        div.appendChild(content);
+        commentContainer.appendChild(div);
+        let likebutton = createLikeButton(obj);
+        commentContainer.appendChild(likebutton);
+        
+        ul.appendChild(commentContainer);
     })
     div.appendChild(ul);
     

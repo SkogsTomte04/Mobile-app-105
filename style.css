@@ -95,7 +95,7 @@ ul.footer{
 .slider::-webkit-scrollbar {
     display: none;
 }
-img.like{
+.content > .like{
     width: 10%;
     
     position: absolute;
@@ -132,11 +132,43 @@ img.comment{
 .comment-section ul{
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
-.comment-section li{
-    border-style: dashed;
+.comment-container{
+    display: flex;
+    border-bottom-style: solid;
+    margin: 10px;
     border-width: 1px;
+    justify-content: center;
+
+}.comment-container > .like{
+    position: absolute;
+    width: 1em;
+    right: 10px;
+    padding-top: 10px;
+    border-radius: 0%;
+}
+.comment-container > .userpfp{
+    position: absolute;
+    display: block;
+    width: 40px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    left: 5px;
+}
+.comment-content{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    padding-bottom: 10px;
+    
+}
+.comment-id{
+    font-size: small;
+    font-weight:600;
+    
+}
+.comment-text{
+
 }
 
 footer{
