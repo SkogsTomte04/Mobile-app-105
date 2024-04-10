@@ -11,6 +11,10 @@ body{
     margin: auto;
     overflow-x: hidden;
 }
+::-webkit-scrollbar{
+    display: none;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -34,7 +38,7 @@ ul{
 
 .header{
     display: flex;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .header img{
@@ -92,9 +96,7 @@ ul.footer{
     scroll-behavior: smooth;
     -ms-overflow-style: none;
 }
-.slider::-webkit-scrollbar {
-    display: none;
-}
+
 .content > .like{
     width: 10%;
     
@@ -118,7 +120,7 @@ img.comment{
     max-height: 300px;
     height: 100%;
     width: 100%;
-    background-color: grey;
+    background-color: rgb(141, 141, 141);
     position: absolute;
     bottom: -300px;
     overflow: auto;
@@ -150,10 +152,11 @@ img.comment{
 .comment-container > .userpfp{
     position: absolute;
     display: block;
-    width: 40px;
+    width: 8%;
     border-radius: 50%;
     aspect-ratio: 1/1;
-    left: 5px;
+    left: 0px;
+    margin-left: 10px;
 }
 .comment-content{
     display: flex;
@@ -168,7 +171,22 @@ img.comment{
     
 }
 .comment-text{
+    font-size: small;
+}
+.comment-text span{
+    display: none;
+}
 
+.more span{
+    display: block;
+}
+
+.readMore {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-style: italic;
+
+    text-decoration: underline;
 }
 
 footer{

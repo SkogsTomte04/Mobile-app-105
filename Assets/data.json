@@ -9,9 +9,21 @@
         "Assets/images/2.jpg"
       ],
       "comments": [
-        "Yoooooo this dude traaash",
-        "Yoooooo this dude traaash",
-        "Yoooooo this dude traaash"
+        {
+          "userid": "Millekille",
+          "userpfp" : "Assets/profilepics/2.png",
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.!"
+        },
+        {
+          "userid": "Millekille",
+          "userpfp" : "Assets/profilepics/2.png",
+          "comment": "Go boy go!"
+        },
+        {
+          "userid": "Millekille",
+          "userpfp" : "Assets/profilepics/2.png",
+          "comment": "Go boy go!"
+        }
       ],
       "title": "Dreamy boy",
       "description": "look at this charming 5'4 bosnian boy"
@@ -26,9 +38,21 @@
         "Assets/images/7.png"
       ],
       "comments": [
-        "Yoooooo this dude traaash",
-        "Yoooooo this dude traaash",
-        "Yoooooo this dude traaash"
+        {
+          "userid": "Millekille",
+          "userpfp" : "Assets/profilepics/2.png",
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.!"
+        },
+        {
+          "userid": "Millekille",
+          "userpfp" : "Assets/profilepics/2.png",
+          "comment": "Go boy go!"
+        },
+        {
+          "userid": "Millekille",
+          "userpfp" : "Assets/profilepics/2.png",
+          "comment": "Go boy go!"
+        }
       ],
       "title": "Walkin",
       "description": "brought to you by uhhh the walkers"
@@ -43,9 +67,21 @@
         "Assets/images/8.png"
       ],
       "comments": [
-        "Yoooooo this dude traaash",
-        "Yoooooo this dude traaash",
-        "Yoooooo this dude traaash"
+        {
+          "userid": "Millekille",
+          "userpfp" : "Assets/profilepics/2.png",
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.!"
+        },
+        {
+          "userid": "Millekille",
+          "userpfp" : "Assets/profilepics/2.png",
+          "comment": "Go boy go!"
+        },
+        {
+          "userid": "Millekille",
+          "userpfp" : "Assets/profilepics/2.png",
+          "comment": "Go boy go!"
+        }
       ],
       "title": "\"No Way!!!\"",
       "description": "Feerocuis man killed in lego building battle royale"

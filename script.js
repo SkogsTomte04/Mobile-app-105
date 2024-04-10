@@ -118,8 +118,23 @@ function createCommentSection(obj){
 
         let content = document.createElement('li');
         content.classList.add("comment-text");
-        content.textContent = commentobject.comment;
+        
+
+        if(commentobject.comment.length > 100){
+            let text = commentobject.comment;
+
+            const splitArr = [text.substr(0,100), text.substr(100)];
+            content.innerHTML = splitArr[0]+ " <span>"+splitArr[1]+"</span>";
+
+            let readButton = createReadButton(content);
+            content.appendChild(readButton);
+
+            console.log(splitArr[0],splitArr[1]);
+        }else{
+            content.textContent = commentobject.comment;
+        }
         div.appendChild(content);
+
         commentContainer.appendChild(div);
         let likebutton = createLikeButton(obj);
         commentContainer.appendChild(likebutton);
@@ -129,6 +144,17 @@ function createCommentSection(obj){
     div.appendChild(ul);
     
     return div;
+}
+
+function createReadButton(content){
+    let button = document.createElement("p");
+    button.classList.add("readMore");
+    button.innerText = "Read more";
+    button.addEventListener("click", () =>{
+        content.classList.toggle("more");
+        console.log("reading more");
+    })
+    return button
 }
 
 function createLikeButton(obj){
