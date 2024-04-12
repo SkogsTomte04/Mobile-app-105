@@ -10,9 +10,14 @@ body{
     vertical-align: middle;
     margin: auto;
     overflow-x: hidden;
+    flex-direction: column;
 }
 ::-webkit-scrollbar{
     display: none;
+}
+header {
+    background-color:lightslategrey;
+
 }
 
 .container{
