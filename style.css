@@ -1,14 +1,11 @@
-html{
-    display: flex;
-}
+
 body{
     font-family: "Roboto", sans-serif;
-    margin-top: 20%;
     background-color: lightgray;
     display: flex;
     box-sizing: border-box;
     vertical-align: middle;
-    margin: auto;
+    margin: 0;
     overflow-x: hidden;
     flex-direction: column;
 }
@@ -17,7 +14,9 @@ body{
 }
 header {
     background-color:lightslategrey;
-
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .container{
@@ -33,6 +32,8 @@ ul{
     padding: 0;
 }
 #dataFeed{
+    padding-top: 10%;
+    padding-bottom: 15%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -197,17 +198,42 @@ img.comment{
 footer{
     position: fixed;
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
     bottom: 0;
-
 }
 
 footer ul{
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
     padding: 0%;
+    height: auto;
 
+}
+footer li.active{
+    border-bottom-style: solid;
+}
+
+
+
+
+
+
+
+
+
+.GameContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+.GameContainer > ul{
+    
+}
+div.letters{
+    display: flex;
+    flex-direction: row;
+    vertical-align: baseline;
 }
