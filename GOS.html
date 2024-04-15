@@ -20,18 +20,20 @@
         <div class="GameContainer">
             <ul>
                 <div class="letters">
-                    <p>S</p>
-                    <p>K</p>
-                    <p>A</p>
-                    <p>T</p>
-                    <p>E</p>
+                    
+                    <p onclick="letterclick(this)">S</p>
+                    <p onclick="letterclick(this)">K</p>
+                    <p onclick="letterclick(this)">A</p>
+                    <p onclick="letterclick(this)">T</p>
+                    <p onclick="letterclick(this)">E</p>
                 </div>
+                <li>VS</li>
                 <div class="letters">
-                    <p>S</p>
-                    <p>K</p>
-                    <p>A</p>
-                    <p>T</p>
-                    <p>E</p>
+                    <p onclick="letterclick(this)">S</p>
+                    <p onclick="letterclick(this)">K</p>
+                    <p onclick="letterclick(this)">A</p>
+                    <p onclick="letterclick(this)">T</p>
+                    <p onclick="letterclick(this)">E</p>
                 </div>
             </ul>
         </div>
@@ -42,9 +44,14 @@
             <ul>
                 <li ><a href="/index.html"><img src="Assets/icons/SolarFeedOutline.svg" alt=""></a></li>
                 <li class="active"><a href="/GOS.html"><img src="Assets/icons/PhStudent.svg" alt=""></a></li>
-                <li><a href=""><img src="Assets/icons/MaterialSymbolsLocalLibraryOutlineRounded.svg" alt=""></a></li>
+                <li><a href="/trickguide.html"><img src="Assets/icons/MaterialSymbolsLocalLibraryOutlineRounded.svg" alt=""></a></li>
             </ul>
         </footer>
        
+        <script>
+            function letterclick(element){
+                element.classList.toggle("active");
+            }
+        </script>
     </body>
 </html>
