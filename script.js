@@ -1,9 +1,5 @@
 getJsonData();
 
-function $(x){
-    return document.getElementById(x);
-}
-
 function getJsonData(){
     fetch('./Assets/data.json')
         .then((respond) => {

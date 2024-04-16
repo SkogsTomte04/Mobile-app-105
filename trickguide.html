@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8" /> 
         <link rel="stylesheet" href="style.css">
+        <script defer src="./common.js"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
 
@@ -12,9 +13,18 @@
 
     <body>
         <header>
-            <div>
-                <img src="Assets/icons/TablerSkateboarding.svg" alt="">
+            <img src="Assets/icons/TablerSkateboarding.svg" alt="">
+            <button onclick="toggleMenu()"><img src="Assets/icons/MaterialSymbolsMenu.svg" alt=""></button>
+            <div id="modal">
+                <div id="menu">
+                    <ul class="menulist">
+                        <li><img src="Assets/icons/MaterialSymbolsAccountCircle.svg" alt=""><p>Sign-In</p></li>
+                        <li><img src="Assets/icons/MaterialSymbolsNotifications.svg" alt=""></li>
+                    </ul>
+
+                </div>
             </div>
+            
         </header>
         <ul class="tricktips">
             <div class="container trickguide">
