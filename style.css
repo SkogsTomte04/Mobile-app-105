@@ -67,8 +67,13 @@ button{
     gap: 1rem;
     padding-left: 1em;
 }
-.menulist > p{
-    font-size: larger;
+.menulist > li{
+    display: flex;
+    flex-direction: row;
+}
+.menulist > li > p{
+    font-size: medium;
+    padding-left: 5px;
 }
 .container{
     display: flex;
